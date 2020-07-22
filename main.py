@@ -7,14 +7,14 @@ import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
 
-app = Flask(__name__)
+main = Flask(__name__)
 
-@app.route('/')
+@main.route('/')
 def home():
     return render_template('index.html')
     
 
-@app.route('/main_function',methods=['POST'])
+@main.route('/main_function',methods=['POST'])
 def main_function():
     if list(request.form.values())[0] == 'AxisBank':
         pr = Prediction(['AxisBank',["#AxisBank","#axisbank","@axisBank","@RBI"]])
@@ -30,4 +30,4 @@ def main_function():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    main.run(debug=True)
