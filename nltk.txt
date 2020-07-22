@@ -1,4 +1,2 @@
 vaderSentiment
 wordnet
-pros_cons
-reuters

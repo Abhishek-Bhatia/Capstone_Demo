@@ -12,4 +12,5 @@ pandas>=0.19
 schedule==0.6.0
 GetOldTweets3==0.0.11
 DateTime==4.3
+nltk>=3.3
 
