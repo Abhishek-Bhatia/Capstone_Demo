@@ -1,0 +1,4 @@
+vader_lexicon
+wordnet
+pros_cons
+reuters
