@@ -1,4 +1,4 @@
-vader_lexicon
+vaderSentiment
 wordnet
 pros_cons
 reuters
