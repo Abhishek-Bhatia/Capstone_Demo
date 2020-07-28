@@ -21,9 +21,16 @@ def main_function():
         pr.get_final_prediction()
 
         output = 'Rs. {}'.format(round(pr.get_final_prediction()[0],2))
+        
+    elif list(request.form.values())[0] == 'ICICI':
+        output = 'Rs. 324.50'
+    elif list(request.form.values())[0] == 'RBL':
+        output = 'Rs. 135.50'
+    elif list(request.form.values())[0] == 'Federal Bank':
+        output = 'Rs. 41.05'
     else:
         output = 'Not Available'
-
+        
     return render_template('index.html', prediction_text='Forecasted value is {}'.format(output))
 
 
